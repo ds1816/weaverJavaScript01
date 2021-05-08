@@ -1,0 +1,65 @@
+git 是分布式版本控制软件
+
+从本地工作目录和版本库中间有一个  暂存区，
+本地工作目录 到暂存区 命令 git add  暂存区到版本库 命令 git commit 
+
+在互相推送版本代码时 git push  反之（拉取远程代码更新本地代码版本） git pull
+
+
+本地版本库有多个（分支1,2,3....）,分支默认主分支为master，即暂存区到版本库（分支）默认commit到master上
+
+
+
+安装git  msysgit.github.io  
+  安装时命令模式 选择批处理模式（Bash） 
+  将bin 目录配置到  path 中
+
+1.在本地配置有户名和邮箱。（ git config --global user.name"****" ）——（ git config --global user.email"****"  ）
+2.获取本地sshkey  (   ssh-keygen -t rsa -C 1961013635@qq.com )
+3.在github端的seetings中配置SSH，新建SSH keys，内容直接复制 C:\Users\20180823\.ssh 中 id_rsa.pub的内容，注意不要有回车，空格的站位符号
+4.测试   ssh -T git@github.com
+
+5.目录中右键 gitbash   输入 git init  ，文件夹中没有 .git 文件夹，在  组织--文件夹和搜索选项--查看  设置相关可见选项
+6.远程关联  进入 https://github.com/ds1816  （?tab=repositories），点击进入 repositories，新建项目后，可生成标识符（https://github.com/ds1816/myGitNotes.git）
+7.开始关联  ，将本地项目推送到远程   git remote add origin ‘仓库地址’// git@github.com:ds1816/weaverJavaScript01.git
+git add .
+$ git commit -m "first push"
+$ git push -u origin master
+/**
+1.OpenSSL SSL_read: Connection was reset, errno 10054  报错解决方法：
+     打开Git命令页面，执行git命令脚本： 修改设置，解除ssl验证
+      git config --global http.sslVerify "false"
+
+2.GIT 报错：Branch ‘master’ set up to track remote branch ‘master’ from ‘origin’  解决方法：
+    1、移除
+    git remote rm origin
+   2、再次连接
+   git remote add origin ‘仓库地址’
+   
+*/
+
+克隆   git clone git@github.com:ds1816/gitNotes.git
+
+
+更新 
+
+提交 
+git add .
+git commit -m "本地修改提交"
+git push   origin master  （提交更新的git必须是在原始的同一个项目文件夹中，否则无法更新！！！！）
+  /**
+    To https://github.com/xxxxx/xxxx.git
+ ! [rejected] master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/xxxx/xxxxx.git'
+
+    hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+
+    hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+
+    hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+  */
+
+
+
