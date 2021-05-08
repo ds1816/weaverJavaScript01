@@ -1,0 +1,4 @@
+//需要在提交事件做校验
+jQuery("#" + hisfield).after(iframeHtml);
+var an = "<img src='/images/BacoError_wev8.gif' align='absmiddle'>";
+jQuery("#field9195").after(an);

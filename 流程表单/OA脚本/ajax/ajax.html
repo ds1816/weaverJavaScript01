@@ -1,0 +1,20 @@
+/* ajax */
+/* ajax */
+/* ajax */
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$.ajax({
+	        type: "POST",
+	        url: "/userDefined/java/getTime.jsp",
+	        data: null,
+	        contentType: "application/json",
+	        success: function (result) {
+	            alert('ok');
+	        },
+	        error: function (error) {
+	            alert('error');
+	        }
+	    })
+    })
+</script>

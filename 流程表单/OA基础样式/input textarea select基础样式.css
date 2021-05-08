@@ -1,0 +1,79 @@
+/* input区域 */
+/* input区域 */
+/* input区域 */
+
+/*更改背景，更改边框，仅有下划线*/
+input.Inputstyle{
+	background-color: inherit;
+	border: 0;
+	border-bottom: 1px solid #E9E9E2;
+}
+/*适应表格全宽度*/
+input.Inputstyle{
+	margin: 5px 5%;
+	width: 90%!important;
+}
+/*支持！*/
+input.Inputstyle{
+	width: calc(100% - 15px)!important;
+}
+
+
+
+
+
+/* textarea区域 */
+/* textarea区域 */
+/* textarea区域 */
+
+/*更改背景，更改边框*/
+textarea{
+	background-color: inherit;
+	border: 0;
+}
+/*适应表格全宽度*/
+textarea{
+	margin: 5px 5%;
+	width: 90%!important;
+}
+/*支持！*/
+textarea{
+	width: calc(100% - 23px)!important;
+}
+/*不支持拖拽*/
+textarea{
+	resize: none;
+}
+/*改变边距*/
+textarea{
+	margin: 5px 5px;
+}
+
+
+
+
+/* select区域 */
+/* select区域 */
+/* select区域 */
+
+/*更改背景，更改边框，仅有下划线。由于有的地方会存在初始border,所以需要important*/
+select{
+	background-color: inherit;
+	border: 0!important;
+	border-bottom: 1px solid #E9E9E2!important;
+}
+/*更改宽度*/
+select{
+	margin: 5px 5px;
+	width: calc(100% - 23px);
+}
+/*更改高度*/
+select{
+	height: 100%;
+}
+/*去除下拉箭头*/
+select{
+	appearance:none;
+	-moz-appearance:none;
+	-webkit-appearance:none;
+}

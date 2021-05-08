@@ -1,0 +1,15 @@
+/* 背景图自适应 */
+/* 背景图自适应 */
+/* 背景图自适应 */
+
+/*自适应*/
+.excelMainTable{
+	position: relative;
+}
+	.excelMainTable > tbody > tr:nth-child(2) td{
+		position: static!important;
+	}
+	.excelMainTable > tbody > tr:nth-child(2) img{
+		height: 100%;
+		width: 100%;
+	}

@@ -1,0 +1,9 @@
+/* 单元格图标 */
+/* 单元格图标 */
+/* 单元格图标 */
+
+/*更改图标的位置*/
+.mainTd_2_6{
+    background-position: center right!important;
+}
+/*记住，不能使用class，因为图片是给td加上的，而如果使用class，则是给td > div加的，所以没有用*/

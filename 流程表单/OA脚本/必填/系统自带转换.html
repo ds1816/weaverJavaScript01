@@ -1,0 +1,34 @@
+<!-- 系统自带的转换 -->
+<!-- 系统自带的转换 -->
+<!-- 系统自带的转换 -->
+
+<!-- 注意，此情况不适用于附件控件 -->
+<script type="text/javascript" src="/js/weaver_wev8.js"></script>
+<script type="text/javascript">
+	setFieldReadOnly("8484", true); //将field8484转换为只读
+
+
+	setFieldReadOnly("8484", false, 1); //将field8484转换为编辑
+	//如果原来是必填，改为编辑，需要删除验证
+	var baseText = $("input[name='needcheck']").val();
+	var baseList = baseText.split(',');
+	for(var i = baseList.length - 1; i >= 0 ; i--){
+		var data = baseList[i].trim();
+		if((data == "field8484") || (data == ""))
+			baseList.splice(i, 1);
+	}
+	$("input[name='needcheck']").val(baseList.join(','));
+
+
+	setFieldReadOnly("8484", false, 2); //将field8484转换为必填
+	//增加验证
+	var baseText = $("input[name='needcheck']").val();
+	var result = (baseText == "")? "field8484": (baseText + ",field8484");
+	$("input[name='needcheck']").val(result);
+</script>
+
+
+<script type="text/javascript" src="/js/weaver_wev8.js"></script>
+<script type="text/javascript">
+	setReadOnly("#field8484"); //将field8484转换为只读
+</script>

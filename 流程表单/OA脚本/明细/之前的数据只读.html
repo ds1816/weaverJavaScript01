@@ -1,0 +1,22 @@
+<!-- 页面对于之前的数据只读 -->
+<!-- 页面对于之前的数据只读 -->
+<!-- 页面对于之前的数据只读 -->
+
+<!--方法一： js代码-->
+<script type="text/javascript" src="/js/weaver_wev8.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function(){ 
+		var idList = ["8732","8734","8678","8679"];//需要只读的id值
+		var allCount = $("#nodesnum1").val();      //总行数
+
+		for(var i = 0; i < allCount; i++){
+			$("#detailDiv_1 input[name='check_node_1']").eq(i).attr("disabled", true); //不可勾选 勾选框
+			for(var j = 0; j < idList.length; j++){
+				setFieldReadOnly(idList[j] + "_" + i, true); //只读
+			}
+		}
+	});
+</script>
+
+<!--方法二： 系统自带方法-->
+<!--		  打开明细表，取消勾选 允许修改已有明细、允许删除已有明细-->

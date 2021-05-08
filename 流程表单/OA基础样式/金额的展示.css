@@ -1,0 +1,10 @@
+/* 金额的展示 */
+/* 金额的展示 */
+/* 金额的展示 */
+
+/*先设置人员选择框的class为h-money*/
+.h-money input{
+	border: 2px solid #f9d5d5;
+	border-radius: 5px;
+	font-weight: 600;
+}

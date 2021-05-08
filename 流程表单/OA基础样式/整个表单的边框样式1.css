@@ -1,0 +1,8 @@
+/* 改变表单的边框 */
+/* 改变表单的边框 */
+/* 改变表单的边框 */
+
+/*加入阴影*/
+.excelMainTable{
+    box-shadow: 5px 5px 10px 1px #c9c9c9;
+}

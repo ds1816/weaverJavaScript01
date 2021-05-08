@@ -1,0 +1,23 @@
+/*类似提交保存按钮的样式*/
+/*类似提交保存按钮的样式*/
+/*类似提交保存按钮的样式*/
+
+
+/*先设置标题的class为h_likeButton*/
+.h_likeButton{
+	background-color: white;
+	border: 1px solid #30B5FF;
+	border-radius: 10px;
+	color: #30B5FF;
+	padding: 20px 0;
+}
+	.h_likeButton:hover{
+		background-color: #03A996;
+		color: white;
+	}
+
+/*选中的按钮的按钮*/
+.j_selectButton{
+	background-color: #30B5FF;
+	color: white;
+}

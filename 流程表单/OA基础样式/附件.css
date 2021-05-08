@@ -1,0 +1,26 @@
+/* 附件的样式 */
+/* 附件的样式 */
+/* 附件的样式 */
+
+/*更改流程、文档的边框，仅有下线*/
+.e8_os .e8_innerShowContent{ background-color: inherit; border: 0; border-bottom: 1px solid #E9E9E2; }
+.e8_os .e8_outScroll{ border: 0; }
+
+
+/*改变宽度，将流程、文档的class置为h-other-information*/
+.h-other-information { width: 100%; float: left; }
+	.h-other-information .e8_os{ width: 100%!important; }
+
+
+/*更改附件的样式，将最大和选择框在一行，将附件的class置为h-other-appendix*/
+.h-other-appendix .ViewForm TD { background-color: inherit; }
+	.h-other-appendix .ViewForm TR:nth-child(1) TD > div:nth-child(1){ float: right; width: 100px; }
+	.h-other-appendix .ViewForm TR:nth-child(1) TD > div:nth-child(2){ float: left; width: calc(100% - 100px); }
+
+
+/*更改附件的样式，适合于小单元格内的附件，将流程、文档的class置为h-appendix*/
+.h-appendix > table { width: 100%!important; }
+.h-appendix TD { background-color: inherit; }
+	.h-appendix TR:nth-child(1) TD div:nth-child(1){ width: calc(100% - 120px); }
+	.h-appendix TR:nth-child(1) TD div:nth-child(2){ float: right!important; width: 120px; }
+	.h-appendix TR:nth-child(1) > TD > div{ width: 100%!important; }

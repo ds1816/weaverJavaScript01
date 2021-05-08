@@ -1,0 +1,11 @@
+#overflowPic{
+	height: 130px;
+	position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+	#overflowPic img{
+		top: 0;
+		position: absolute;
+		left: 0;
+	}

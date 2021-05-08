@@ -1,0 +1,9 @@
+/* 标题的样式 */
+/* 标题的样式 */
+/* 标题的样式 */
+
+/*先设置标题的class为h-flowTitle*/
+.h-flowTitle input.Inputstyle{
+	margin: 0;
+	width: 100%;
+}

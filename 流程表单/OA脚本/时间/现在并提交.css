@@ -1,0 +1,12 @@
+.changeButton{
+    border: 1px solid green;
+    border-radius: 7px;
+    color: green;
+    float: right;
+    margin: -3px 2px;
+    padding: 5px 15px;
+}
+    .changeButton:hover{
+        background-color: green;
+        color: white;
+    }

@@ -1,0 +1,6 @@
+移动端模板需要注意：
+	1、测试时，测试路径是
+	http://192.168.2.191/mobile/plugin/1/view.jsp?viewdoc=&fromFlowDoc=&f_weaver_belongto_userid=26&f_weaver_belongto_usertype=0&uselessFlag=&requestid=2096&isrequest=0&isovertime=0&isaffirmance=&reEdit=1&seeflowdoc=0&isworkflowdoc=0&isfromtab=false&isSubmitDirect=
+		需修改 191 以及 view.jsp? 后面内容。
+		？后面内容请参照该流程的实际网址？后面内容
+	2、测试是，应用对应的身份登录系统，否则js会无法使用

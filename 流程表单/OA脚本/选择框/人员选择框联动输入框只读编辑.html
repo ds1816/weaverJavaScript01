@@ -1,0 +1,13 @@
+<!-- 根据人员选择框，控制输入框只读编辑 -->
+<!-- 根据人员选择框，控制输入框只读编辑 -->
+<!-- 根据人员选择框，控制输入框只读编辑 -->
+
+<script type="text/javascript" src="/js/weaver_wev8.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#field7921").bindPropertyChange(function(){
+			if($("#field7921").val() == "") setFieldReadOnly("8675", false, 1); //编辑
+			else setFieldReadOnly("8675", true); //只读
+		})
+	});
+</script>

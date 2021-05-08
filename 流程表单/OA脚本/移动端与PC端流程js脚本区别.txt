@@ -1,0 +1,68 @@
+1.提交时调用的方法不同：
+    PC端提交时调用：checkCustomize
+    移动端提交时调用：window.doSubmit_4Mobile
+    
+    案例：
+        PC端：
+        var checkCustomize2 = checkCustomize;
+		checkCustomize = function (){
+            //这里添加代码
+            //if(1 == 2){
+            //    return false;
+            //}
+            return checkCustomize2();
+		};
+        
+        移动端：
+        var doSubmit_4Mobile_old = window.doSubmit_4Mobile;
+        window.doSubmit_4Mobile = function ( _object, _callBackFunType ){
+            //这里添加代码
+            //if(1 == 2){
+            //    return false;
+            //}
+            doSubmit_4Mobile_old( _object, _callBackFunType );
+        }
+        
+2.添加明细事件的方法不同：
+    PC端添加明细事件：addRow0
+    移动端添加明细事件：detailTrClick
+    
+    案例：
+        PC端：
+        var addRowTmp0 = addRow0;
+		addRow0 = function(index){   // 方法里的0标识第1个明细表， index 也是同样的意思，比如第一个明细表就写 0
+			addRowTmp0(index);
+			//这里添加代码
+		};
+        
+        移动端：
+        var detailTrClick_old = detailTrClick;
+        detailTrClick = function(mx, index){  // mx 标识第几个明细表， index 标识添加的第几行
+            detailTrClick_old(mx, index);
+            //这里添加代码
+        }
+        
+        
+3.明细字段赋值的区别：
+    PC端获取控件：jQuery('#field9391_'+rowindex);
+    移动端获取控件：
+        移动端因为明细的编辑是通过生成的来编辑，所以在赋值时2个地方都要赋值
+        jQuery('#field9391_'+rowindex+'_d'); //编辑界面控件
+        jQuery('#field9386_'+rowindex+'_d'+'_ismandspan').html(""); //编辑界面面板
+        
+        jQuery("#field9386_"+rowindex);      //列表界面控件
+        jQuery("#isshow0_"+rowindex+"_9386").html(qingjlbText);  //列表界面面板
+    
+
+
+    PC端案例：
+        jQuery('#field9391_'+rowindex).val("值");        
+        jQuery('#field9391_'+rowindex+"span").html("值");
+        
+    移动端案例：
+        jQuery('#field9391_'+rowindex+'_d').val("值");
+        jQuery('#field9391_'+rowindex+'_d'+"_ismandspan").html("值");
+        
+        jQuery("#field9391_"+rowindex).val("值");    
+        jQuery("#isshow0_"+rowindex+"_9391").html("值");
+        

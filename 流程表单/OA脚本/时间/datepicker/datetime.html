@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/datepicker.css">
+</head>
+<body>
+    <div class="c-datepicker-date-editor c-datepicker-single-editor J-datepicker mt10">
+        <i class="c-datepicker-range__icon kxiconfont icon-clock"></i>
+        <input type="text" autocomplete="off" name="" placeholder="选择日期" class=" c-datepicker-data-input" value="2019-04-29 20:59">
+    </div>
+    <div class="c-datepicker-date-editor c-datepicker-single-editor J-datepicker mt10">
+        <i class="c-datepicker-range__icon kxiconfont icon-clock"></i>
+        <input type="text" autocomplete="off" name="" placeholder="选择日期" class=" c-datepicker-data-input" value="2019-04-29 20:59">
+    </div>
+    
+    <script src="js/jquery-1.7.js"></script>
+    <script src="js/moment.min.js"></script>
+    <script src="js/datepicker.all.js"></script>
+    <script src="js/jquery-clock-timepicker.min.js"></script>
+    <script type="text/javascript">
+      $(function(){
+        //十分秒年月日单个
+        $('.J-datepicker').datePicker({
+          hasShortcut:true,
+          format: 'YYYY-MM-DD HH:mm',
+          shortcutOptions:[{
+            name: '一周前',
+            day: '-7',
+            time: '00:00'
+          }, {
+            name: '昨天',
+            day: '-1',
+            time: '00:00'
+          }, {
+            name: '今天',
+            day: '0'
+          }, {
+            name: '明天',
+            day: '1',
+            time: '00:00'
+          }, {
+            name: '一周后',
+            day: '7',
+            time: '00:00'
+          },],
+          hide:function(){}
+        });
+      });
+    </script>
+</body>
+</html>

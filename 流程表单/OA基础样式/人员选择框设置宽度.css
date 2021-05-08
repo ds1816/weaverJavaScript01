@@ -1,0 +1,18 @@
+/* 人员选择框设置宽度 */
+/* 人员选择框设置宽度 */
+/* 人员选择框设置宽度 */
+
+/*先设置人员选择框的class为changePerson*/
+
+/*更改宽度*/
+.changePerson{
+	width: 99%;
+}
+	.changePerson .e8_os{
+	    min-width: 0px!important;
+		width: 100%!important;
+	}
+
+/*如果需要改变背景颜色，需要更改jsp代码。默认是白色!important。所以无法更改*/
+
+/*去掉边框，去掉相关附件的边框就会一并去掉*/

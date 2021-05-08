@@ -1,0 +1,24 @@
+/* 改变最后一行的样式 */
+/* 改变最后一行的样式 */
+/* 改变最后一行的样式 */
+
+/*  由于需要，可能在最后一行内容后加一行
+	但如果最后一行未进行任何设置的时候，软件会拒绝创建空行
+	所以需要在最后一行设置一些在界面上不显示的内容
+*/
+
+/*改变最后一行的样式*/
+.excelMainTable > tbody > tr:last-child > td{
+	opacity: 0;
+}
+
+
+
+/*  如果需要最后一行图片自适应
+*/
+
+/*改变最后一行的图片*/
+.excelMainTable > tbody > tr:last-child > td{
+	background-size: auto 100%;
+	background-repeat: repeat !important;
+}
